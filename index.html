@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b16a884f50.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kênia Elpidio</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo_size.jpg" width="50%" alt="">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/Keniaelpidio"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/knmacedo/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/keniaelpidio/"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Kênia Elpidio</h1>
+                <h5>Administradora | Yellow Belt | Scrum Fundamentals Certified | SCA-HDI | Estudante de Programação e
+                    Digital Commerce: Hiring Coders #3 e Tech Academy.</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Graduada em Administração de Empresas, com experiência em cooperativismo, operações com
+                    participantes em entidade fechada de previdência, recuperação de crédito, empréstimos e atendimento ao cliente.
+                    Possuo certificação Lean Seis Sigma Yellow Belt e Scrum Fundamentals (SFC). MS Excel avançado,
+                    conhecimento em Power BI e MySQL.
+                <p>Futura desenvolvedora.</p><br>
+
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato:</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor E-mail :)">
+                    <button type="submit">Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
